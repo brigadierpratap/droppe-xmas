@@ -1,0 +1,102 @@
+.ind-list-cont {
+  padding-inline: 7em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: calc(100vh - 10em);
+  align-items: center;
+  justify-content: space-around;
+}
+.product-tile {
+  display: flex;
+  flex-direction: column;
+  min-width: 20em;
+  max-height: 15em;
+  min-height: 15em;
+  max-width: 95%;
+  border: 1px solid red;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1em;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1em;
+  margin-inline: 0.5em;
+}
+.banner {
+  position: absolute;
+  top: 20px;
+  background-color: red;
+  width: 10em;
+  font-size: 10px;
+  left: -20px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  transform: rotate(-45deg);
+}
+.prod-quant {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.quantity-left {
+  border-right: 8px solid rgb(108, 99, 255);
+  border-bottom: 8px solid transparent;
+  border-top: 8px solid transparent;
+  margin-inline: 8px;
+  cursor: pointer;
+}
+.quantity-right {
+  border-left: 8px solid rgb(108, 99, 255);
+  border-bottom: 8px solid transparent;
+  border-top: 8px solid transparent;
+  margin-inline: 8px;
+  cursor: pointer;
+}
+.prod-tile-btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+.prod-tile-btns > .accept {
+  background-color: rgb(108, 99, 255);
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 6em;
+  font-size: 18px;
+  padding-block: 0.4em;
+  border-radius: 0.3em;
+  margin-right: 0.5em;
+  transition: all 0.2s linear;
+}
+.prod-tile-btns > .deny {
+  background-color: red;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 6em;
+  font-size: 18px;
+  padding-block: 0.4em;
+  border-radius: 0.3em;
+  margin-right: 0.5em;
+  transition: all 0.2s linear;
+}
+.prod-tile-btns > button:hover {
+  opacity: 0.7;
+}
+.prod-tile-btns > button:active {
+  transform: scale(0.95);
+}
+@media (max-width: 991px) {
+  .ind-list-cont {
+    padding-inline: 2em;
+    justify-content: center;
+  }
+}

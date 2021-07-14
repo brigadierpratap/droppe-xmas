@@ -1,0 +1,42 @@
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  padding-inline: 7em;
+  background-color: black;
+  justify-content: space-between;
+  color: white;
+  padding-block: 2em;
+}
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+.footer-inner > .title {
+  margin-bottom: 1em;
+  font-size: 18px;
+}
+
+.footer-inner > a {
+  margin-bottom: 0.4em;
+  color: rgb(158, 154, 167);
+}
+.footer-inner > a:hover {
+  color: rgb(108, 99, 255);
+}
+.social-icons {
+  display: flex;
+  margin-top: 2em;
+}
+.social-icons > a {
+  margin-left: 0.5em;
+}
+.social-icons > a:hover {
+  color: rgb(108, 99, 255);
+}
+
+.footer-inner > .brand {
+  margin-top: 2em;
+  font-size: 25px;
+  font-weight: 700;
+}

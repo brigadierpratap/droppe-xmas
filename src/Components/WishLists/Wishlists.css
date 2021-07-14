@@ -1,0 +1,81 @@
+.wishlist-container {
+  padding-inline: 7em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: calc(100vh - 10em);
+  align-items: center;
+}
+.cart-tile {
+  display: flex;
+  flex-direction: column;
+  min-height: 15em;
+  justify-content: center;
+  align-items: center;
+  min-width: 15em;
+  max-width: 90%;
+  max-height: 15em;
+  cursor: pointer;
+  transform: scale(0.98);
+  -o-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  -moz-transform: scale(0.98);
+  -webkit-transform: scale(0.98);
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  border: 1px solid red;
+  border-radius: 1em;
+  margin-inline: 1.5em;
+  background-image: url(../../Assets/claus.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90% 70%;
+  position: relative;
+}
+.cart-tile:hover {
+  transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+}
+.cart-ribbon {
+  width: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transform: rotate(-45deg);
+}
+.cart-title {
+  font-size: 25px;
+  z-index: 2;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wishlist-order {
+  display: flex;
+  justify-content: center;
+}
+.wishlist-order > a {
+  padding-block: 0.4em;
+  padding-inline: 2em;
+  font-size: 20px;
+  background-color: rgb(108, 99, 255);
+  color: white;
+  border-radius: 0.4em;
+}
+
+@media (max-width: 991px) {
+  .wishlist-container {
+    padding-inline: 2em;
+  }
+}
+@media (max-width: 640px) {
+  .wishlist-container {
+    justify-content: center;
+  }
+}

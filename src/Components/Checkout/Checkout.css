@@ -1,0 +1,123 @@
+.checkout-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 7em;
+}
+.checkout-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 1.5em;
+  color: rgb(108, 99, 255);
+}
+.checkout-inner {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.checkout-accepted {
+  display: flex;
+  flex-direction: column;
+  width: 40em;
+  max-width: 100%;
+}
+.checkout-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.checkout-row > span {
+  width: 28.33%;
+  text-align: center;
+  font-style: italic;
+  font-weight: 600;
+  background-color: rgb(233, 233, 233);
+  padding-block: 0.3em;
+}
+.checkout-row > span:not(:last-child) {
+  border-right: 1px solid rgb(133, 133, 133);
+}
+.cart-id {
+  width: 15% !important;
+}
+.checkout-inner-rows > span {
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-weight: 500;
+}
+.checkout-inner-rows > span:hover {
+  background-color: rgb(108, 99, 255);
+  color: white;
+}
+.checkout-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+.checkout-button > .confirm {
+  font-size: 18px;
+  padding-block: 0.5em;
+  padding-inline: 2em;
+  margin-right: 1em;
+  background-color: rgb(108, 99, 255);
+  color: white;
+  border: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+.checkout-button > .back {
+  font-size: 18px;
+  padding-block: 0.5em;
+  padding-inline: 2em;
+  margin-left: 1em;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+.checkout-button > button:hover {
+  opacity: 0.7;
+}
+.disreg-title {
+  margin-top: 3em;
+  margin-bottom: 2em;
+  font-weight: 600;
+  font-size: 18px;
+}
+.disreg-row {
+  margin-block: 0.5em;
+  font-style: italic;
+  display: flex;
+  justify-content: space-around;
+  margin-inline: 2em;
+}
+.disreg-row > span {
+  margin-left: 0.5em;
+}
+.checkout-disregarded {
+  display: flex;
+  flex-direction: column;
+  width: 40em;
+  max-width: 100%;
+  align-items: center;
+}
+.disreg-cont {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media (max-width: 991px) {
+  .checkout-container {
+    padding-inline: 2em;
+  }
+}
+@media (max-width: 360px) {
+  .checkout-container {
+    padding-inline: 1em;
+  }
+}
