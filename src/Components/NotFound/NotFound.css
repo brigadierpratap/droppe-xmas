@@ -1,0 +1,25 @@
+.not-found-container {
+  width: inherit;
+  padding-inline: 7em;
+  height: 66.9vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.nf-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nf-inner > img {
+  max-width: 50%;
+  margin-bottom: 2em;
+}
+@media (max-width: 991px) {
+  .not-found-container {
+    padding-inline: 2em;
+  }
+  .nf-inner > img {
+    max-width: 90%;
+  }
+}
